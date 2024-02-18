@@ -13,7 +13,7 @@ const start = async () => {
     await app.register(routes);
 
     try {
-        await app.listen({ port: 8080 });
+        await app.listen(443);
     } catch (error) {
         process.exit(1);
     }
